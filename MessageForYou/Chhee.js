@@ -1,8 +1,4 @@
-
-
-
 var dc=document, c=0, s
-
 
 async function bdy()
 {
@@ -24,8 +20,7 @@ async function hst()
 			s[i]+="/"+st[j]
 		s[i]+=".mp4"
 	}
-	g("a").href=s[Math.floor(Math.random()*100000%l)]
-	console.log(g("a").href)
+	a(l)
 	console.log(s)
 	c=1
 	setTimeout(()=>{
@@ -60,11 +55,11 @@ function gtF()
 	});
 }
 
-async function a()
+async function a(l=29)
 {
+	g("a").href=s[Math.floor(Math.random()*100000)%l]
 	if(!c)
 		return
 	c=2;
 	g("a").click()
 }
-
