@@ -8,18 +8,19 @@ async function bdy()
 async function hst()
 {
 	s = rplc((await gtF()).split('\n'))
-	var i = 0, st, j, l=s.length, ll;
+	var i = 0, st, j, l=s.length, ll, ss=[];
 	for(; i<l; ++i)
 	{
-		if(s[i]=="")
+		if(""+s[i].length<3)
 			continue
 		st=s[i].split('/');
-		s[i]="https://www."+st[0]+(st[0].indexOf(".")!=-1?"/":".com/")+st[1];
+		ss.push("https://www."+st[0]+(st[0].indexOf(".")!=-1?"/":".com/")+st[1]);
 		ll=st.length;
 		for(j=2; j<ll; ++j)
-			s[i]+="/"+st[j]
-		s[i]+=".mp4"
+			ss[i]+="/"+st[j]
+		ss[i]+=".mp4"
 	}
+	s=ss
 	a(l)
 	console.log(s)
 	c=1
