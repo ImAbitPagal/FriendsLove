@@ -1,0 +1,54 @@
+
+
+html, body
+{
+	vertical-align:middle;
+	animation-name:colHipno;
+	animation-duration:20s;
+	animation-iteration-count:infinite;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+H1
+{
+	color:#EEE;
+	position:fixed;
+	top:35%;
+	left:0;
+	width:100%;
+	text-align:center;
+	background-color:rgba(0, 0, 0, 0.25);
+	animation-name:colHipno2;
+	animation-duration:20s;
+	animation-iteration-count:infinite;
+}
+
+#da:hover
+{
+	background-color:rgba(0, 0, 0, 0.5);
+}
+
+@keyframes colHipno2
+{
+	0%{color:#AFF;}
+	20%{color:#AAF;}
+	40%{color:#FAA;}
+	60%{color:#FFA;}
+	80%{color:#AFA;}
+	100%{color:#AFF;}
+}
+
+@keyframes colHipno
+{
+	0%{background-color:#FAA;}
+	20%{background-color:#FFA;}
+	40%{background-color:#AFF;}
+	60%{background-color:#AAF;}
+	80%{background-color:#FAF;}
+	100%{background-color:#FAA;}
+}
