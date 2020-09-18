@@ -27,7 +27,7 @@ async function hst()
 	setTimeout(()=>{
 		if(c<2)
 			g("a").click()
-		}, 1500000)
+		}, 10000)
 }
 
 function rplc(s)
